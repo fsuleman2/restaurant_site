@@ -10,14 +10,14 @@
 
 }
 .footer{
-    background-color: aquamarine;
+    background-color:   #D1C4E9;
     margin: 0px auto;
     padding: 20px 0px 20px 0px;
 }
 .jumbotron{
     margin:0px auto ;
     padding: 70px 50px 70px 50px;
-    background: #9575cd;
+    background:#9575cd;
     color:floralwhite;
 }
 .address{
