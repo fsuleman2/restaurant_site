@@ -17,6 +17,7 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "lodash": "^4.17.19",
+    "minimist": "^1.2.5",
     "popper.js": "^1.12.9"
   }
 }
