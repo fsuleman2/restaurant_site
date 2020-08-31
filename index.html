@@ -28,9 +28,56 @@
                 <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
                 <li class="nav-item "><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
             </ul>
+            <!--Modal starts-->
+            <span class="navbar-text">
+                <a data-toggle="modal" data-target="#loginModal" href="#">
+                    <span class="fa fa-sign-in">Login</span>
+                </a>
+            </span>
+            <!--Modal ends-->
         </div>
       </nav>
     <!------------------------------------------------------Navbar end---------------------------------------------------------------->
+    <!------------------------------------------------------Modal Starts---------------------------------------------------------------->
+      <div id="loginModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg" role="content">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Login</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                          &times;
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                  <form action="">
+                      <div class="form-row">
+                          <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputEmail" id="exampleInputEmail">Email</label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exaampleInputEmail" placeholder="Enter Email">
+                          </div>
+                          <div class="form-group col-sm-4">
+                            <label class="sr-only" for="exampleInputPassword" id="exampleInputPassword">Password</label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword" placeholder="Enter Password">
+                          </div>
+                          <div class="col-sm-auto">
+                              <div class="form-check">
+                                  <input type="checkbox" class="form-check-input">
+                                  <label for="" class="form-check-label">Remember me</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-row">
+                          <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-primary btn-sm ml-1">Sign-in</button>
+                      </div>
+                  </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <!------------------------------------------------------Modal end---------------------------------------------------------------->
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -38,11 +85,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
+                <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div> 
-                <div class="col-12 col-sm-3 align-self-center">
-                    <a href="#form-area"><button class="btn btn-warning btn-block"><strong>Reserve Table</strong></button></a>
+                <div class="col-12 col-sm align-self-center">
+                    <a role="button" class="btn btn-warning btn-block" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+85 1234 555</strong>" data-placement="bottom" href="#form-area"><strong>Reserve Table</strong></a>
                 </div>
             </div>  
           
@@ -106,15 +153,15 @@
                         <h3 class="card-header bg-warning text-white ali">Reserve a Table</h3>
                         <div class="card-body">
                             <form action="">
-                                <div class="form-group row">
+                                <div class="form-row">
                                     <label for="numberofguest" class="col-md-2 col-form-label"><strong>Number of Guest</strong></label>
                                         <div class="col-md-10">
                                             <input type="radio" name="radio" id="radio_btn1">&nbsp;<label><h5>1</h5></label>&nbsp;&nbsp;
-                                            <input type="radio" name="radio" id="radio_btn1">&nbsp;<label><h5>2</h5></label>&nbsp;&nbsp;
-                                            <input type="radio" name="radio" id="radio_btn2">&nbsp;<label><h5>3</h5></label>&nbsp;&nbsp;
-                                            <input type="radio" name="radio" id="radio_btn3">&nbsp;<label><h5>4</h5></label>&nbsp;&nbsp;
-                                            <input type="radio" name="radio" id="radio_btn4">&nbsp;<label><h5>5</h5></label>&nbsp;&nbsp;
-                                            <input type="radio" name="radio" id="radio_btn5">&nbsp;<label><h5>6</h5></label>&nbsp;&nbsp;
+                                            <input type="radio" name="radio" id="radio_btn2">&nbsp;<label><h5>2</h5></label>&nbsp;&nbsp;
+                                            <input type="radio" name="radio" id="radio_btn3">&nbsp;<label><h5>3</h5></label>&nbsp;&nbsp;
+                                            <input type="radio" name="radio" id="radio_btn4">&nbsp;<label><h5>4</h5></label>&nbsp;&nbsp;
+                                            <input type="radio" name="radio" id="radio_btn5">&nbsp;<label><h5>5</h5></label>&nbsp;&nbsp;
+                                            <input type="radio" name="radio" id="radio_btn6">&nbsp;<label><h5>6</h5></label>&nbsp;&nbsp;
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -184,5 +231,11 @@
                     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
                     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
                     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+                    <!--tool tip code-->
+                    <script>
+                        $(document).ready(function(){
+                            $('[data-toggle="tooltip"]').tooltip();
+                        });
+                    </script>
     </body>
 </html>
