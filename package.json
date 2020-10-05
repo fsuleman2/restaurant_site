@@ -11,7 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+<<<<<<< HEAD
     "lite-server": "^2.3.0"
+=======
+    "lite-server": "^2.5.4"
+>>>>>>> 6cfd8a7... carousel JQ button added
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
