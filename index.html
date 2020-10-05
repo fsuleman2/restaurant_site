@@ -28,17 +28,18 @@
                 <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
                 <li class="nav-item "><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
             </ul>
-            <!--Modal starts-->
+            <!--Modal_Login starts-->
             <span class="navbar-text">
                 <a data-toggle="modal" data-target="#loginModal" href="#">
                     <span class="fa fa-sign-in">&nbsp;Login</span>
                 </a>
             </span>
-            <!--Modal ends-->
+            <!--Modal_Login ends-->
+            
         </div>
       </nav>
-    <!------------------------------------------------------Navbar end---------------------------------------------------------------->
-    <!------------------------------------------------------Modal Starts---------------------------------------------------------------->
+    <!------------------------------------------------------Navbar ends---------------------------------------------------------------->
+    <!------------------------------------------------------Modal_Login Starts---------------------------------------------------------------->
       <div id="loginModal" class="modal fade" role="dialog">
           <div class="modal-dialog modal-lg" role="content">
               <div class="modal-content">
@@ -76,8 +77,70 @@
           </div>
       </div>
 
-        <!------------------------------------------------------Modal end---------------------------------------------------------------->
+        <!------------------------------------------------------Modal_Login ends---------------------------------------------------------------->
+        <!------------------------------------------------------Assignment_3 Modal Starts here---------------------------------------------------------------->
+        <div id="reserve_table" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row">
+                                <label for="numberofguest" class="col-md-2 col-form-label"><strong>Number of Guest</strong></label>
+                                    <div class="col-md-10">
+                                        <input type="radio" name="radio" id="radio_btn1">&nbsp;<label><h5>1</h5></label>&nbsp;&nbsp;
+                                        <input type="radio" name="radio" id="radio_btn2">&nbsp;<label><h5>2</h5></label>&nbsp;&nbsp;
+                                        <input type="radio" name="radio" id="radio_btn3">&nbsp;<label><h5>3</h5></label>&nbsp;&nbsp;
+                                        <input type="radio" name="radio" id="radio_btn4">&nbsp;<label><h5>4</h5></label>&nbsp;&nbsp;
+                                        <input type="radio" name="radio" id="radio_btn5">&nbsp;<label><h5>5</h5></label>&nbsp;&nbsp;
+                                        <input type="radio" name="radio" id="radio_btn6">&nbsp;<label><h5>6</h5></label>&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="numberofguest" class="col-md-2 col-form-label"><strong>Section</strong></label>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                          <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                        </label>
+                                        <label class="btn btn-danger">
+                                          <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="datetime" class="col-md-2 col-form-label"><strong>Date and Time</strong></label>
+                                    <div class="col-6 col-md-4">
+                                        <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                                       </div>
+                                    <div class="col-6 col-md-4">
+                                        <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-10 offset-md-2">
+                                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary btn-sm ml-1">Reserve</button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+
+
+
+
+
+
+        <!------------------------------------------------------Assignment_3 Modal ends here---------------------------------------------------------------->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -88,9 +151,15 @@
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div> 
-                <div class="col-12 col-sm align-self-center">
+                <!--Tool tip button starts-->
+                <!-- <div class="col-12 col-sm align-self-center">
                     <a role="button" class="btn btn-warning btn-block" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+85 1234 555</strong>" data-placement="bottom" href="#form-area"><strong>Reserve Table</strong></a>
+                </div> -->
+                <!--tool tip button ends-->
+                <div class="col-12 col-sm align-self-center">
+                    <a  data-toggle="modal" data-target="#reserve_table" role="button" class="btn btn-warning btn-block" data-html="true" href="#"><strong>Reserve Table</strong></a>
                 </div>
+               
             </div>  
           
         </div>
@@ -281,10 +350,11 @@
                     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
                     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
                     <!--tool tip code-->
-                    <script>
+                    <!-- <script>
                         $(document).ready(function(){
                             $('[data-toggle="tooltip"]').tooltip();
                         });
-                    </script>
+                    </script> -->
+                    <!--tool tip code ends-->
     </body>
 </html>
