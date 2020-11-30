@@ -24,6 +24,7 @@
     "liteserver": "^0.3.0",
     "lodash": "^4.17.19",
     "minimist": "^1.2.5",
+    "object-path": "^0.11.5",
     "popper": "^1.0.1",
     "popper.js": "^1.12.9"
   }
