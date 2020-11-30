@@ -7,3 +7,6 @@
 4. npm i bootstrap
 5. npm i font-awesome
 6. npm i jquery
+
+
+![](restaurantsite.gif)
