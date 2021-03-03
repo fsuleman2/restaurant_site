@@ -1,4 +1,4 @@
-# git-boot is an Restaurant Website
+# Restaurant Website
 
 ## Packages Installed
 1. npm install
