@@ -22,7 +22,7 @@
     "jquery": "^3.5.1",
     "less": "^3.12.2",
     "liteserver": "^0.3.0",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.5",
     "object-path": "^0.11.5",
     "popper": "^1.0.1",
